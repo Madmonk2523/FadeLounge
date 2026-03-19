@@ -602,6 +602,10 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.lightbox[hidden] {
+  display: none;
+}
+
 .lightbox-close {
   position: fixed;
   top: 1rem;
