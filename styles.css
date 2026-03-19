@@ -217,6 +217,10 @@ a {
   background: rgba(18, 19, 23, 0.95);
 }
 
+.mobile-nav[hidden] {
+  display: none;
+}
+
 .mobile-nav a {
   color: #d9dce3;
   text-transform: uppercase;
