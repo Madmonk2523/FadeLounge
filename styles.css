@@ -314,30 +314,22 @@ a {
 }
 
 .about-images {
-  min-height: 460px;
-  position: relative;
+  min-height: 0;
 }
 
 .image-card {
-  position: absolute;
+  position: relative;
   overflow: hidden;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  aspect-ratio: 4 / 5;
+  max-height: 560px;
 }
 
-.image-front {
-  left: 0;
-  top: 0;
-  width: 72%;
-  height: 78%;
-}
-
-.image-back {
-  right: 0;
-  bottom: 0;
-  width: 64%;
-  height: 64%;
+.about-images img {
+  object-fit: contain;
+  background: #0f1014;
 }
 
 .about-copy {
@@ -531,19 +523,6 @@ a {
   color: #d5d8df;
 }
 
-.map-placeholder {
-  margin-top: 1rem;
-  min-height: 170px;
-  border-radius: 12px;
-  border: 1px dashed rgba(214, 179, 106, 0.5);
-  display: grid;
-  place-items: center;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-}
-
 .final-cta {
   padding-top: 2rem;
 }
@@ -660,7 +639,7 @@ a {
   }
 
   .about-images {
-    min-height: 430px;
+    min-height: 0;
   }
 
   .gallery-grid {
@@ -693,17 +672,7 @@ a {
   }
 
   .about-images {
-    min-height: 360px;
-  }
-
-  .image-front {
-    width: 78%;
-    height: 72%;
-  }
-
-  .image-back {
-    width: 70%;
-    height: 60%;
+    min-height: 0;
   }
 }
 
