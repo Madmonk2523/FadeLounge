@@ -7,6 +7,11 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightboxImage');
 const lightboxClose = document.getElementById('lightboxClose');
 const galleryItems = document.querySelectorAll('.gallery-item');
+const yearNode = document.getElementById('year');
+
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
+}
 
 const onScroll = () => {
   if (window.scrollY > 24) {

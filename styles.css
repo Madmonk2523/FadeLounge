@@ -554,22 +554,72 @@ a {
 .site-footer {
   width: var(--container);
   margin: 0 auto;
-  padding: 2rem 0 3rem;
+  padding: 2.4rem 0 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.footer-col {
+  background: rgba(18, 19, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.footer-brand {
+  background:
+    radial-gradient(circle at 85% 18%, rgba(214, 179, 106, 0.18), transparent 40%),
+    rgba(18, 19, 23, 0.75);
 }
 
 .site-footer h3,
 .site-footer h4 {
   margin: 0 0 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1.3rem;
 }
 
 .site-footer p {
   margin: 0.2rem 0;
   color: #c8ccd5;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.footer-links a,
+.site-footer a {
+  color: #d6dae2;
+  transition: color var(--transition);
+}
+
+.footer-links a:hover,
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #aeb3be;
+  font-size: 0.9rem;
 }
 
 .lightbox {
@@ -649,6 +699,10 @@ a {
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -677,6 +731,10 @@ a {
 
   .about-images {
     min-height: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
 
