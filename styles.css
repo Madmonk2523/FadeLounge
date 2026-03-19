@@ -225,7 +225,10 @@ a {
   display: grid;
   place-items: center;
   padding: 9rem 1rem 5rem;
-  background: url("background.jpg") center center / cover no-repeat;
+  background-color: #0b0b0d;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay {
