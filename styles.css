@@ -238,7 +238,7 @@ a {
   display: grid;
   place-items: center;
   padding: 9rem 1rem 5rem;
-  background: url("background.webp") center center / cover no-repeat;
+  background: url("background.jpg") center center / cover no-repeat;
 }
 
 .hero-overlay {
